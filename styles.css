@@ -1,0 +1,15 @@
+:root{--bg:#050a14;--card:#0b1220;--line:#16213a;--tx:#e6edf7;--mut:#8ea0ba;--up:#16c784;--dn:#ea3943}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif}
+header{position:sticky;top:0;background:#070d1a;border-bottom:1px solid var(--line);padding:8px 12px;z-index:5}h1{margin:0 0 6px;font-size:18px}
+nav{display:flex;gap:6px;overflow-x:auto}button,input,select{background:#101a30;color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font:inherit}
+button{cursor:pointer;white-space:nowrap}button.on{background:var(--up);color:#00130a;border-color:var(--up)}button.danger{background:var(--dn);margin-top:12px}
+main{max-width:1100px;margin:0 auto;padding:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr 1fr}@media(max-width:800px){.grid{grid-template-columns:1fr}}
+.row{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}h2{margin:2px 0}h3,h4{margin:10px 0 4px}small{color:var(--mut)}
+.up{color:var(--up)}.dn{color:var(--dn)}.err{color:#ff8a8a}.warn{color:#f5c542;font-size:13px}
+.sig{padding:10px 16px;border-radius:10px;font-weight:700}.sig.BUY{background:#16c78425;color:var(--up)}.sig.SELL{background:#ea394325;color:var(--dn)}.sig.WAIT{background:#f5c54225;color:#f5c542}
+.badge{font-size:11px;padding:2px 8px;border-radius:99px;font-weight:700}.badge.demo{background:#ff9f4330;color:#ff9f43}.badge.delayed{background:#4da3ff30;color:#4da3ff}.badge.live{background:#16c78430;color:var(--up)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.chart{width:100%;height:380px}table{width:100%;border-collapse:collapse}td,th{padding:5px 6px;border-bottom:1px solid var(--line);text-align:left}
+.item{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 6px;border-bottom:1px solid var(--line);cursor:pointer}
+.form{display:flex;gap:8px;flex-wrap:wrap;align-items:end}.form.col{flex-direction:column;align-items:stretch}label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--mut)}
+.scroll{overflow-x:auto}input{width:100%}.form input{width:auto}footer{text-align:center;color:var(--mut);font-size:12px;padding:16px}
